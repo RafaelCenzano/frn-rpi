@@ -1,0 +1,160 @@
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+nav {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  background-color: #2db140;
+}
+
+nav > div {
+  vertical-align: center;
+  display: inline-block;
+  text-align: center;
+}
+
+nav > div.options {
+  padding-left: 17px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.options a,
+.options a:visited {
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+  font-size: 5vw;
+  margin: 20px;
+  color: #2db140;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 3vw;
+  text-align: center;
+  color: #2db140;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+h3 {
+  text-align: center;
+  font-size: 3vw;
+  margin: 10px;
+  color: #2db140;
+  font-weight: bold;
+}
+
+.stats {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.stats h4 {
+  font-size: 3vw;
+}
+
+.desc {
+  max-width: 85%;
+  text-align: justify;
+  margin: auto;
+}
+
+@media screen and (min-width: 769px) {
+  .socials a:hover,
+  .socials a:visited:hover {
+    color: var(--font-color-lighter);
+  }
+
+  .experience h3 a:hover,
+  .experience h3 a:visited:hover {
+    color: var(--font-color-lighter);
+  }
+
+  .options a:hover,
+  .options a:visited:hover {
+    opacity: 0.6;
+  }
+}
+
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 85%;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 20px;
+  /*height: 400px;*/ /* Adjust height as needed */
+}
+
+.slider-wrapper {
+  display: flex;
+  animation: slideShow 10s infinite ease-in-out;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  animation: fade 2s ease-in-out forwards;
+}
+
+@keyframes slideShow {
+  0% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 32px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+}
+
+.card {
+  max-width: 500px;
+  margin: auto;
+}

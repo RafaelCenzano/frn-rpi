@@ -43,6 +43,7 @@ h2 {
   color: #2db140;
   font-weight: bold;
   margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 h3 {
@@ -56,14 +57,16 @@ h3 {
 .stats {
   text-align: center;
   margin-top: 25px;
+  max-width: 80%;
+  margin: auto;
 }
 
-.stats h4 {
+.stats h2 {
   font-size: 3vw;
 }
 
 .desc {
-  max-width: 85%;
+  max-width: 80%;
   text-align: justify;
   margin: auto;
 }
@@ -82,6 +85,28 @@ h3 {
   .options a:hover,
   .options a:visited:hover {
     opacity: 0.6;
+  }
+
+  .desc {
+    max-width: 60%;
+  }
+
+  .stats {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 7vw;
+  }
+
+  h2 {
+    font-size: 5vw;
+  }
+
+  .stats h2 {
+    font-size: 10vw;
   }
 }
 
@@ -156,5 +181,21 @@ footer {
 
 .card {
   max-width: 500px;
+  margin: auto;
+}
+
+.heading-gap {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.images {
+  justify-content: center;
+  margin: auto;
+  width: 90%;
+}
+
+.images img {
+  max-width: 90%;
   margin: auto;
 }

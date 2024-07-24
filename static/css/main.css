@@ -27,6 +27,7 @@ nav > div.options {
 .options a,
 .options a:visited {
   color: #fff;
+  text-decoration: none;
 }
 
 h1 {
@@ -85,6 +86,7 @@ h3 {
   .options a:hover,
   .options a:visited:hover {
     opacity: 0.6;
+    text-decoration: none;
   }
 
   .desc {
@@ -198,4 +200,16 @@ footer {
 .images img {
   max-width: 90%;
   margin: auto;
+}
+
+a,
+a:visited {
+  color: #2db140;
+  transition-duration: 0.3s;
+  text-decoration: none;
+}
+
+a:hover,
+a:visited:hover {
+  text-decoration: underline;
 }
